@@ -1,9 +1,15 @@
-puts 4 / 3
-puts 4 / 3.0
-puts 1.5 / 2.5
-puts 1.5 * 4
+def g *args
+  args
+end
 
-puts nil || 123
-puts "Hi" || 133
+def f arg
+  arg
+end
 
-puts 'hello'
+x,y,z = [true, 'two', true]
+
+if a = f(x) and b = f(y) and c = f(z) then
+  d = g(a,b,c)
+end
+
+puts d
